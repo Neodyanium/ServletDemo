@@ -91,6 +91,19 @@ pw.close();
 Qs, The responsibiliity to create a Servlet is of the Web Container or Servlet container (here it is Tomcat). It works lazily, so instanciation of a servlet happens when a request is received and not when we start the server.
 
 
+----------------------------------
+
+** doPost and doGet methods are designed to handle the specific requests, the routing is done by service method. It is a good practice to handle static pages via the get method, like looking for some kind of form. Whereas it is good to input data via a post method. 
+
+** Overriding a service method can handle both the post and get requests. Only issue is if you have get and post methods serving different purpose then needs if and else block to check what kind of request it is then providing the response. 
+
+** I have personally cheked, in a post type html form if I used a service method or doPost method, after sending data and getting a response, reloading the page asks if you want to resubmit and it doesn't get to the input page but resubmits the current data again, so you will have duplicate data. This happens with get type forms too only the warning don't pop up. 
+
+*****The PRG (Post/Redirect/Get) Pattern, Under this the doPost() and doGet() has simple responsibilities, doPost() recieves and process data, add it to database or any other thing it does not render HTML. Instead, it ends by executing a redirect, to a view(get method). doGet() Its sole job is to fetch and display data It simply reads the current state and uses PrintWriter or a JSP file to display the final result, doesn't change any data. This is how multiple reload will have no effect, since at the end we are getting a view, a get request that doesnt change the data. 
+
+
+
+
 
 
 

@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ServletLifecycle" />
-        <module name="StaticWebApp" />
+        <module name="ServletGetPost" />
         <module name="DynamicWebApp" />
+        <module name="StaticWebApp" />
       </profile>
     </annotationProcessing>
   </component>
