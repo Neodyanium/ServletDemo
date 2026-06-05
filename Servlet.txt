@@ -1,0 +1,111 @@
+* Client and Server Architecture
+
+- Any device/computer where we can use internet to access via browser to access some service then it is a client.
+- The client is a user or system that is request a specific resource or service from an entity called as Server 
+
+-Internet is a global communication system that links thousands of individual network. It allows the exchange of info between 2 or more computers on a network.
+
+- A machine where you make your service available to people globally can be called as a Server
+- A sever maybe responsible to process one request or more on request time
+
+- Webserver is a software program or server computer which has a world wide web access 
+
+
+- The interaction between the webserver and webbrowser is done with the http protocol
+- When we want to access the service we need to provide the web browser the address(IP) of the machine and if the server has multiple applications we need to provide the port address, but all this things are handled by the DNS (domain name server, ig it is like a registry where they map server name to the server ip)
+
+
+
+* Static and Dynamic Response
+
+- Static response is when the output doesn;t change with User. (Html, CSS)
+
+- Dynamic response is which will change with the user (Servlet, JSP, php etc)
+
+consider an eg, You are filling a registration form so that is a static html/css page, whereas upon registration you receive, Your Name + Registration details that is a dynamic response
+
+We use Spring MVC framework, which is build on top of the tomcat web server, it is abstracted out.
+
+
+*Servlet
+
+-Whenever we want our Server to provide a dynamic response we will use a Servlet.
+
+- In a webserver we will have a server container, that is a runtime environment that is reponsible to run the java code. It does not have the main method, web container/servlet container runs it no jvm involved. 
+
+-To make it a server you will require a server software like Apache Tomcat
+
+- Servlet is a Java program, residing on the server computer it is responsible to process the incoming http service and provide the dynamic response back to client. This can include complex logic and database connnections. A class which implements a Servlet or extends HttpServlet class will be a Servlet.
+
+* To develop a Servlet application we require Java EE perspective in Eclipse IDE, not sure about others yet and a server application like Apache Tomcat, we can configure the server from IDE, we should set non busy port for tomcat, there is a separate port for Admin
+
+-~-~-~-~-~-~-~-
+Intellij Workaround:
+
+1) Install apache tomcat server, if installed tomcat > 9 will require advanced JDK version. Configure the ports after tomcat launch
+
+2) Create a maven project, Archetype should be maven orgs (group ID) webapp(Artifact)
+
+3) Module in Intellij can means project, inside whatever project we are in. You can create various modules or keep modfying this one.
+
+4) Add maven dependencies for servlet according to Java and tomcat version. Now ready to create
+
+5) This by default won't have the servlet, i.e. in src/main/ there is no java source folder to be treated as root folder that can work as servlet, you need to create the directory and mark it as a source directory
+
+6) All the html css will go in src/main/webapp , you can create a index.html which is by default routed by our application. 
+
+7) You need to set the configurations, with a smarttomcat plugin, it is helpful plugin to work with tomcat. Under configurations you will need to provide the apache tomcat server address and catlina jar path (careful while doing it). After this what port to use for the tomcat server. 
+
+8) We are ready, we can run the application it will render html on that port, you can user data map it to servlet via the url and get a response back. The path binding may get complex so necessary to understand how path works here and how it will after the war file is created
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*When making a servlet we need to use a @WebServlet(/url) annotation over the Servlet class, this will help the binding. The Servlet class should extend the HttpServlet class so we can Inherit the necessary methods. 
+
+* Consider we made a html form, the action="/url" will bind with that servlet.
+
+* There are various http methods when working with data, by default if we submit the data it will be embended to the url. If we use post http method it will hide the user data upon submission of the request
+
+*Any methods in the servlet you will have a request and resposne objects, request has all the info coming from the client and response is what we use to return data to the client.
+eg:
+a)request.getParameter("email");  
+
+b)PrintWriter pw = response.getWriter();
+pw.println("Welcome "+email);
+pw.close();
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+* Lifecycle of Servlet
+
+- The webcontainer is responsible for running the servlet. Many methods comes when we implement HttpServlet and they are called internally.
+
+- The Servlet class works like any other when it comes to class loading, so any static blocks will be executed, the comes the class instantiation so a constructor will run, after this the init method is called internally(any initialisation tasks can be done under these blocks), init used for db connections or configs reading 
+
+-After this the service method is called when we receive a request, for each request a new thread is created and each thread then runs the service method. Service creates a request and response object, Service directs the request to doPost() or doGet() I feel it depends on the request method type
+
+- At the end, when shutting down Tomcat, container calls a destroy method is called which shuts down the servlet
+
+- The init() and destroy() methods are only called once in a Lifecycle, only Service can be called multiple times
+
+Qs, The responsibiliity to create a Servlet is of the Web Container or Servlet container (here it is Tomcat). It works lazily, so instanciation of a servlet happens when a request is received and not when we start the server.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
