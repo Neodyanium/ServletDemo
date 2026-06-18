@@ -3,9 +3,17 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/DynamicWebApp/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/DynamicWebApp/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HttpSessionDemo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/HttpSessionDemo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RequestDispatching/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RequestDispatching/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ServletGetPost/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ServletGetPost/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletJSP/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ServletJSP/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ServletLifecycle/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ServletLifecycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Test/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Test/src/main/resources" charset="UTF-8" />
   </component>
 </project>

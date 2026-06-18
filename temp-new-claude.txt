@@ -1,0 +1,11 @@
+I want to make a chrome extension that can download any video from the current webpage:
+
+1) I want it to be able to grab the video on the current webpage, display in the extension the available qualities to download
+
+2) I want it to be compatible with modern players and video sharing methods. There are website that use fragmented clips, where each clip has the way to fetch the next part of the clip, another example in audio and video rendered together but different files. 
+
+3) I have seen a registered extension, but it need premium. With the extension I can see the videos with html, m3u8, HLS, MPD etc. I want you to write something that is able to decipher the video types and the proper way to download them. 
+
+4) I have ffmpeg version 2026-01-07-git-af6a1dd0b2-essentials.... installed on my system I heard some platform require it. If you need more tools make a script to install them.
+
+I know how to add extension to chrome, let me know the setup steps.

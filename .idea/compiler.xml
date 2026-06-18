@@ -8,8 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ServletLifecycle" />
         <module name="ServletGetPost" />
+        <module name="HttpSessionDemo" />
+        <module name="ServletJSP" />
         <module name="DynamicWebApp" />
         <module name="StaticWebApp" />
+        <module name="RequestDispatching" />
       </profile>
     </annotationProcessing>
   </component>

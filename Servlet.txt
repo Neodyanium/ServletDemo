@@ -95,11 +95,94 @@ Qs, The responsibiliity to create a Servlet is of the Web Container or Servlet c
 
 ** doPost and doGet methods are designed to handle the specific requests, the routing is done by service method. It is a good practice to handle static pages via the get method, like looking for some kind of form. Whereas it is good to input data via a post method. 
 
-** Overriding a service method can handle both the post and get requests. Only issue is if you have get and post methods serving different purpose then needs if and else block to check what kind of request it is then providing the response. 
+** Overriding a service method can handle both the post and get requests. Only issue is if you have get and post methods serving different purpose then needs if and else block to check what kind of request it is then providing the response. Like get for static form and 
 
 ** I have personally cheked, in a post type html form if I used a service method or doPost method, after sending data and getting a response, reloading the page asks if you want to resubmit and it doesn't get to the input page but resubmits the current data again, so you will have duplicate data. This happens with get type forms too only the warning don't pop up. 
 
 *****The PRG (Post/Redirect/Get) Pattern, Under this the doPost() and doGet() has simple responsibilities, doPost() recieves and process data, add it to database or any other thing it does not render HTML. Instead, it ends by executing a redirect, to a view(get method). doGet() Its sole job is to fetch and display data It simply reads the current state and uses PrintWriter or a JSP file to display the final result, doesn't change any data. This is how multiple reload will have no effect, since at the end we are getting a view, a get request that doesnt change the data. 
+
+*** The reponse.sendRedirect() , is not a preferred method to return a view as it will discard current request data and work towards sending Redirect
+-------------
+
+*You can use html in the servlet, but it is not the usual practice, it is recommended to return a view/html file. Since html is a rendering laguage and not a PL there is no concept of variables, so we use JSP(html + more capabilities), so we can use the variables from servlet into the jsp
+
+*simply return in the servlet the Module/Project_name/view.jsp
+
+* Other than this if we have more Servlets we can pass the request to another Servlet. We get the dispatcher request object from request object and call any of the 2 methods
+1) Forward: It forwards the request that came from client to another Servlet and the response is given by the Servlet where the request was forwarded to.
+2) Include: Here is simply does its thing and the response of included servlet(second) is added with the respose of the receiver Servlet(first Servlet/Dispatcher Servlet)
+
+**Note: The forward will discard any of first servlet reponse, no view from it, reponse of second servlet is shared with client. Include has both of the responses
+
+Diagram illustration:
+
+
+========================================================================
+1. FORWARD METHOD (.forward) -> DIRECT RETURN FROM TARGET
+========================================================================
+
+   ┌────────┐          1. Request         ┌───────────┐
+   │        ├────────────────────────────>│  Servlet  │
+   │        │                             │    One    │
+   │        │                             └─────┬─────┘
+   │ CLIENT │                                   │
+   │        │                                   │ 2. Forward
+   │        │                                   ▼
+   │        │                             ┌───────────┐
+   │        │      3. Response (Direct)   │  Servlet  │
+   │        │<────────────────────────────┤    Two    │
+   └────────┘                             └───────────┘
+
+
+========================================================================
+2. INCLUDE METHOD (.include) -> RETURN PIPED BACK THROUGH MAIN
+========================================================================
+
+   ┌────────┐          1. Request         ┌───────────┐
+   │        ├────────────────────────────>│           │
+   │        │                             │  Servlet  │
+   │        │   4. Combined Response      │    One    │◄───┐
+   │ CLIENT │<────────────────────────────┤           │    │
+   │        │                             └─────┬─────┘    │
+   │        │                                   │          │ 3. Output &
+   │        │                                   │ 2. Call  │    Control
+   │        │                                   ▼          │    Returns
+   │        │                             ┌───────────┐    │
+   │        │                             │  Servlet  ├────┘
+   │        │                             │    Two    │
+   └────────┘                             └───────────┘
+-------------------------------------
+
+**** User can and should use RequestDispatcher for rendering the jsp page located in the Webapp. Just create a
+RequestDispatcher with the request object and pass jsp name, then call forward or include method on it.
+
+request.getRequestDispatcher("success.jsp").forward(request,response);
+
+- we have important methods related to Session
+
+- request.getSession(bool); When you pass true it returns current session or creates a new and returns (to manage the
+login etc), passing false, if exist it returns current session else returns null
+
+- ** we can put values in the session which can be used by other servlets anywhere in that application.
+-->
+HttpSession session = request.getSession();
+(pass the variable name and then the object, hey you should note that the 2nd arg is sent as Object and might require
+explicit typecasting)
+session.setAttribute("name",username);
+
+Similarly,
+HttpSession session = request.getSession(false);
+String name = (String) session.getAttribute("name");
+
+
+
+
+
+
+
+
+
+
 
 
 

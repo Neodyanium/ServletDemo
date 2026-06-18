@@ -8,6 +8,10 @@
         <option value="$PROJECT_DIR$/DynamicWebApp/pom.xml" />
         <option value="$PROJECT_DIR$/ServletLifecycle/pom.xml" />
         <option value="$PROJECT_DIR$/ServletGetPost/pom.xml" />
+        <option value="$PROJECT_DIR$/ServletJSP/pom.xml" />
+        <option value="$PROJECT_DIR$/RequestDispatching/pom.xml" />
+        <option value="$PROJECT_DIR$/Temp/pom.xml" />
+        <option value="$PROJECT_DIR$/HttpSessionDemo/pom.xml" />
       </list>
     </option>
   </component>
