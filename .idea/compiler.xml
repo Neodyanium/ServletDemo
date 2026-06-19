@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ServletLifecycle" />
         <module name="ServletGetPost" />
+        <module name="FormWithDatabase" />
+        <module name="Test" />
         <module name="HttpSessionDemo" />
         <module name="ServletJSP" />
         <module name="DynamicWebApp" />

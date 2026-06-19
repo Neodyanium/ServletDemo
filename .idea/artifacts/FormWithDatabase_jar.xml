@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FormWithDatabase:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FormWithDatabase_jar</output-path>
+    <root id="archive" name="FormWithDatabase.jar">
+      <element id="module-output" name="FormWithDatabase" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/4.31.1/protobuf-java-4.31.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/mysql/mysql-connector-j/9.7.0/mysql-connector-j-9.7.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

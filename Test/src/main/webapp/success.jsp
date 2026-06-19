@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 </head>
 <body>
 
-    <h2> Hey,@{username} thanks for registering with us</h2>
+    <h2> Hey ${username} thanks for registering with us</h2>
 
 </body>
 

@@ -12,6 +12,8 @@
         <option value="$PROJECT_DIR$/RequestDispatching/pom.xml" />
         <option value="$PROJECT_DIR$/Temp/pom.xml" />
         <option value="$PROJECT_DIR$/HttpSessionDemo/pom.xml" />
+        <option value="$PROJECT_DIR$/Test/pom.xml" />
+        <option value="$PROJECT_DIR$/FormWithDatabase/pom.xml" />
       </list>
     </option>
   </component>
