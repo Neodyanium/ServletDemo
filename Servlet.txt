@@ -160,26 +160,23 @@ request.getRequestDispatcher("success.jsp").forward(request,response);
 
 - we have important methods related to Session
 
-- request.getSession(bool); When you pass true it returns current session or creates a new and returns (to manage the
-login etc), passing false, if exist it returns current session else returns null
+- request.getSession(bool); When you pass true it returns current session or creates a new and returns (to manage thelogin etc), passing false, if exist it returns current session else returns null
 
 - ** we can put values in the session which can be used by other servlets anywhere in that application.
 -->
 HttpSession session = request.getSession();
-(pass the variable name and then the object, hey you should note that the 2nd arg is sent as Object and might require
-explicit typecasting)
 session.setAttribute("name",username);
+(pass the variable name and then the object, hey you should note that the 2nd arg is sent as Object and might require explicit typecasting)
 
 Similarly,
 HttpSession session = request.getSession(false);
 String name = (String) session.getAttribute("name");
 
-* If your servlet is processing the request, (form submission type was servlet address and not a jsp file) then:
+* If your servlet is processing the request, (form submission type was servlet url/address and not a jsp file) then:
 
 <h2> Welcome, <%= request.getParameter("username") %> </h2>
 
-We need to use the above syntax to access the request parameters. Remember the attribute and parameters are different.
-Paramters come from request wheras we can set and fetch attributes within the Servlet.
+We need to use the above syntax to access the request parameters. Remember the attribute and parameters are different.Paramters come from request wheras we can set and fetch attributes within the Servlet.
 
 Need to use this, on top of jsp files, so we can use simple syntax
 <%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
@@ -187,11 +184,46 @@ Need to use this, on top of jsp files, so we can use simple syntax
 if action="success.jsp" , we can get ${param.username}
 
 
+----------------------------------------------------------------------------------------------------------------
+* JSP (Java Server Pages) are extension of servlet are used when we want a dynamic response that is a user specific response. Since it is an extension of Servlet we can write all the html and all the Servlet logic in JSP
+
+
+-we usually separate the operations, servlet are for receiving request, then another Servlet/class/method, should handle the business logic, or logical processing and view. 
+
+
+-  "<%  %>"  is a scriptlet tag, we can use it to add code we can write in a service class, internally it will be converted to a servlet. We don't need to create a class or request object, they are created internally and are ready to use. They also provide a PrintWriter Object called "out" if we want to use it to write the response. 
+eg:
+
+<%
+	
+	out.println("<h1> Thanks for registering </h1>");
+	Date date = new Date(); 
+	String city = request.getParameter("city");
+
+ %>
+- if we want to create an instance variable or an instance method, then we use <%!  %>
+eg:
+<%! int age=18; %>
+
+- We mostly have all the objects we need implicitly created by JSP, what if we need an object from another package, we can do imports in the following and use in scriptlet
+ <%@ page import="java.util.Date,"java.util.HashMap"  %>
+
+- Expression tag is used to use variable actual data, <%= %> , eg: 
+<%=  date   %>
+<h1> <%= city %> </h1>
 
 
 
+*** Internally it will create a Servlet class which extends the HttpServlet and adds the code written in various tags, it will be slower. Practically, the views and Servlet should be separated
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Servlet vs JSP
 
+1) Servlet has Java code, where as JSP is a tag based file, so everything is included between tags, you want to use java code in JSP using tags too.
+
+2) JSP is little slower, if you write Servlet logic inside JSP, whereas Servlet directly compiles into Machine code and is executed by the Servlet container, JSP will be first made into Servlet behind the scenes
+
+3) If you are using Servlet to write to reponse, if you change the servlet code when it is already deployed/running the changes won't be reflected you will need to re-run/redeploy the server to get the updates. This is not the case with JSP as request Handler, any change in JSP will be rendered on a reload.
 
 
 

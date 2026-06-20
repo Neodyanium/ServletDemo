@@ -1,0 +1,1091 @@
+20-Jun-2026 21:38:19.803 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:38:19.803 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:39:21.492 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:39:21.492 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:41:16.678 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:41:16.678 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:42:28.258 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:42:28.258 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:43:29.774 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:43:29.774 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:44:53.147 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:44:53.148 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:46:07.017 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:46:07.017 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:48:16.899 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:48:16.899 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:51:50.338 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:51:50.339 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 21:54:23.301 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 21:54:23.302 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 22:32:29.599 SEVERE [http-nio-8090-exec-10] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+12: 
+13: public void isAdult(int age){
+14:     if(age >= 18)
+15:         out.println("<h2> Adult</h2>");
+16:     else
+17:         out.println("<h2> A Minor</h2>");
+18: }
+
+
+An error occurred at line: [17] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+14:     if(age >= 18)
+15:         out.println("<h2> Adult</h2>");
+16:     else
+17:         out.println("<h2> A Minor</h2>");
+18: }
+19: 
+20: %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+12: 
+13: public void isAdult(int age){
+14:     if(age >= 18)
+15:         out.println("<h2> Adult</h2>");
+16:     else
+17:         out.println("<h2> A Minor</h2>");
+18: }
+
+
+An error occurred at line: [17] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+14:     if(age >= 18)
+15:         out.println("<h2> Adult</h2>");
+16:     else
+17:         out.println("<h2> A Minor</h2>");
+18: }
+19: 
+20: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:70)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:189)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:539)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:326)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:32:43.717 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 22:32:43.718 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 22:33:17.070 SEVERE [http-nio-8090-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+12: 
+13:     public void isAdult(int age){
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+
+
+An error occurred at line: [17] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+19: 
+20: %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+12: 
+13:     public void isAdult(int age){
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+
+
+An error occurred at line: [17] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+19: 
+20: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:70)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:189)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:539)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:326)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:33:19.423 SEVERE [http-nio-8090-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.UserInfo_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.UserInfo_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:93)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:47)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:147)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:163)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:382)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:34:55.226 SEVERE [http-nio-8090-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+12: 
+13:     public void isAdult(int age){
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+
+
+An error occurred at line: [17] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+19: 
+20: %>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+12: 
+13:     public void isAdult(int age){
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+
+
+An error occurred at line: [17] in the jsp file: [/UserInfo.jsp]
+out cannot be resolved
+14:         if(age >= 18)
+15:             out.println("<h2> Adult</h2>");
+16:         else
+17:             out.println("<h2> A Minor</h2>");
+18:     }
+19: 
+20: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:70)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:189)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:539)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:326)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:39:36.484 SEVERE [http-nio-8090-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/UserInfo.jsp]
+String literal is not properly closed by a double-quote
+31:     isAdult(age);
+32: 
+33:     Date d = new Date();
+34:     out.println("<h2> <%= date %> </h2>")
+35:   %>
+36: </body>
+37: </html>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/UserInfo.jsp]
+String literal is not properly closed by a double-quote
+31:     isAdult(age);
+32: 
+33:     Date d = new Date();
+34:     out.println("<h2> <%= date %> </h2>")
+35:   %>
+36: </body>
+37: </html>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:70)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:189)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:539)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:326)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:39:57.962 SEVERE [http-nio-8090-exec-8] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/UserInfo.jsp]
+String literal is not properly closed by a double-quote
+31:     isAdult(age);
+32: 
+33:     Date d = new Date();
+34:     out.println("<h2> <%= date %> </h2>");
+35:   %>
+36: </body>
+37: </html>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/UserInfo.jsp]
+String literal is not properly closed by a double-quote
+31:     isAdult(age);
+32: 
+33:     Date d = new Date();
+34:     out.println("<h2> <%= date %> </h2>");
+35:   %>
+36: </body>
+37: </html>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:70)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:189)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:539)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:326)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:40:00.877 SEVERE [http-nio-8090-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.UserInfo_jsp] with root cause
+	java.lang.ClassNotFoundException: org.apache.jsp.UserInfo_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:93)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:47)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:147)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:163)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:382)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:40:56.113 INFO [main] org.apache.catalina.core.ApplicationContext.log Marking servlet [LifecycleServlet] as unavailable
+20-Jun-2026 22:40:56.114 SEVERE [main] org.apache.catalina.core.StandardContext.loadOnStartup Servlet [LifecycleServlet] in web application [/ServletLifecycle] threw load() exception
+	java.lang.NoSuchMethodException: LifecycleServlet.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3761)
+		at java.base/java.lang.Class.getConstructor(Class.java:2442)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:140)
+		at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:753)
+		at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:693)
+		at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4181)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4464)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:564)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:663)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:590)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1828)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:123)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:485)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:376)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1579)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:262)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:389)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:336)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:741)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:780)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1162)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1158)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:81)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:714)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:201)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:410)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:864)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:756)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:339)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:470)
+20-Jun-2026 22:41:08.884 SEVERE [http-nio-8090-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/UserInfo.jsp]
+String literal is not properly closed by a double-quote
+31:     isAdult(age);
+32: 
+33:     Date d = new Date();
+34:     out.println("<h2> <%= date %> </h2>");
+35:   %>
+36: </body>
+37: </html>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [34] in the jsp file: [/UserInfo.jsp]
+String literal is not properly closed by a double-quote
+31:     isAdult(age);
+32: 
+33:     Date d = new Date();
+34:     out.println("<h2> <%= date %> </h2>");
+35:   %>
+36: </body>
+37: </html>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:70)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:189)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:539)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:326)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+20-Jun-2026 22:42:15.971 SEVERE [http-nio-8090-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/JSPvsServlet] threw exception [org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/UserInfo.jsp]
+date cannot be resolved to a variable
+33:     Date d = new Date();
+34:   %>
+35: 
+36:   <%= date %>
+37: </body>
+38: </html>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [36] in the jsp file: [/UserInfo.jsp]
+date cannot be resolved to a variable
+33:     Date d = new Date();
+34:   %>
+35: 
+36:   <%= date %>
+37: </body>
+38: </html>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:70)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:189)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:539)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:368)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:340)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:326)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:585)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:368)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:330)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:281)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:782)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
