@@ -104,15 +104,18 @@ Qs, The responsibiliity to create a Servlet is of the Web Container or Servlet c
 *** The reponse.sendRedirect() , is not a preferred method to return a view as it will discard current request data and work towards sending Redirect
 -------------
 
-*You can use html in the servlet, but it is not the usual practice, it is recommended to return a view/html file. Since html is a rendering laguage and not a PL there is no concept of variables, so we use JSP(html + more capabilities), so we can use the variables from servlet into the jsp
+*You can use html in the servlet, but it is not the usual practice, it is recommended to return a view/html file. Since
+html is a rendering language and not a PL there is no concept of variables, so we use JSP(html + more capabilities), so we can use the variables from servlet into the jsp
 
 *simply return in the servlet the Module/Project_name/view.jsp
 
 * Other than this if we have more Servlets we can pass the request to another Servlet. We get the dispatcher request object from request object and call any of the 2 methods
 1) Forward: It forwards the request that came from client to another Servlet and the response is given by the Servlet where the request was forwarded to.
-2) Include: Here is simply does its thing and the response of included servlet(second) is added with the respose of the receiver Servlet(first Servlet/Dispatcher Servlet)
+2) Include: Here is simply does its thing and the response of included servlet(second) is added with the response of the
+ receiver Servlet(first Servlet/Dispatcher Servlet)
 
-**Note: The forward will discard any of first servlet reponse, no view from it, reponse of second servlet is shared with client. Include has both of the responses
+**Note: The forward will discard any of first servlet response, no view from it, response of second servlet is shared
+with client. Include has both of the responses
 
 Diagram illustration:
 
@@ -226,7 +229,37 @@ Servlet vs JSP
 3) If you are using Servlet to write to reponse, if you change the servlet code when it is already deployed/running the changes won't be reflected you will need to re-run/redeploy the server to get the updates. This is not the case with JSP as request Handler, any change in JSP will be rendered on a reload.
 
 
+----------------------------------------------------------------------------------------------------------------------------------
+** MVC design Pattern, Model-View-Controller pattern
 
+-Controllers (a Servlet) handles the client requests, if it is requesting data it forwards the request to Model(JDBC), the Model returns data that is then given to the view to present to the client. 
+
+-Model usually has JDBC handeling, it works according to the request, whether to fetch or add data and returns the output to controller.
+
+-View provides html or jsp reponse back to the client. 
+
+Here each of these components has an individual work of routing, DB operations and rendering a view, the Model and View should never interact with each other. Controller should be the one to enable the communication.
+
+                            +-------------------+
+                            |       MODEL       |
+                            |      (JDBC)       |
+                            +-------------------+
+                              ▲               │
+             2. Processes Data│               │3. Returns Core Data
+               & Logic Demands│               │   (Java Objects)
+                              │               ▼
+  +-------------------+     +-------------------+     +-------------------+
+  |       VIEW        |     |    CONTROLLER     |     |      CLIENT       |
+  |    (JSP / HTML)   | ◄───|     (Servlet)     | ◄───|  (Web Browser)    |
+  +-------------------+     +-------------------+     +-------------------+
+    │                         4. Forwards State         1. Dispatches Form
+    │                            & Request Context         Parameters (POST)
+    │                                                   
+    └───────────────────────────────────────────────────►
+                         5. Sends Rendered UI Response
+                            (Raw HTML Stream)
+
+*** They are separated so the management of the individual component gets easy and loose coupling helps easy modifications. There could be steps involved between controller and Model/view, which is handled by controller.
 
 
 

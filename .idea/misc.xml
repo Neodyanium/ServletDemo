@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/Test/pom.xml" />
         <option value="$PROJECT_DIR$/FormWithDatabase/pom.xml" />
         <option value="$PROJECT_DIR$/JSPvsServlet/pom.xml" />
+        <option value="$PROJECT_DIR$/MVCApp/pom.xml" />
       </list>
     </option>
   </component>

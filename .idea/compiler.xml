@@ -13,6 +13,7 @@
         <module name="Test" />
         <module name="HttpSessionDemo" />
         <module name="ServletJSP" />
+        <module name="MVCApp" />
         <module name="DynamicWebApp" />
         <module name="StaticWebApp" />
         <module name="RequestDispatching" />

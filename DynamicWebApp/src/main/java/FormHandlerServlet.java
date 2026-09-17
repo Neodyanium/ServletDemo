@@ -14,14 +14,14 @@ public class FormHandlerServlet extends HttpServlet {
         System.out.println("A request Arrived");
     }
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        String username = req.getParameter("username");
-        String pass = req.getParameter("password");
+        String username = request.getParameter("username");
+        String pass = request.getParameter("password");
 
-        PrintWriter pw = resp.getWriter();
+        PrintWriter pw = response.getWriter();
         pw.println("Hello "+username+" idiot");
-        pw.println(pass+" Isn't this your password, next time be careful, logging in suspicious sites");
+        pw.println(pass+"-Isn't this your password, next time be careful, logging in suspicious sites");
         pw.close();
     }
 }
