@@ -10,8 +10,12 @@ import java.io.PrintWriter;
 /**
  * This works lazily, even if we go to the url nothing will be printed on console as the class is loaded lazily. With
  * the help of the annotation attribute loadOnStartup = 1, we can have them load right as the server starts
+ * Use the following in method body to see the change, this will make it run with another module hence removed from
+ * the main code body
+ * @WebServlet(value = "/cycles",loadOnStartup = 1)
+ *
  */
-@WebServlet(value = "/cycles",loadOnStartup = 1)
+@WebServlet(value = "/cycles")
 public class LifecycleServlet extends HttpServlet {
 
     static {

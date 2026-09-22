@@ -13,8 +13,14 @@ public class FormHandlerServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
-        //check what the below thing do
-        request.setAttribute("username",username);
+        /**
+         * the setAttribute is used within the server side functions, in our code it is redundant as I am setting the
+         * same from the request, it means that they can have different values
+         * request.getParameter("username")  // data sent by the client/form
+         * request.getAttribute("username")  // server-side data attached to the request
+         *
+          */
+        request.setAttribute("username","Shravya");
 
         HttpSession session = request.getSession();
         //pass the variable name and then the object

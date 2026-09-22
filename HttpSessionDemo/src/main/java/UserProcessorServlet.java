@@ -16,7 +16,17 @@ public class UserProcessorServlet extends HttpServlet {
         HttpSession session = request.getSession(false);
         String name = (String) session.getAttribute("name");
 
+        /**
+         * Lets see the request and server side data
+         */
+        System.out.println("Request Parameter:"+request.getParameter("username"));  // data sent by the client/form
+        System.out.println("Request Attribute:"+request.getAttribute("username"));  // server-side data attached to the
+        // request
+
+        response.setContentType("text/html");
+
         PrintWriter printWriter = response.getWriter();
         printWriter.println("<h2> Hey " + name + " thanks for registering </h2>");
+        printWriter.close();
     }
 }

@@ -1,6 +1,6 @@
 StaticWebApp
 DynamicWebApp
-ServletLifeCycle  x
+ServletLifeCycle
 ServletGetPost
 ServletJSP
 RequestDispatching

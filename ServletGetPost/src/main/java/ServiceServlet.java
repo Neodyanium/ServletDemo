@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 public class ServiceServlet extends HttpServlet {
     @Override
     public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("Inside service()");
         String uname = request.getParameter("username");
         String city = request.getParameter("city");
 

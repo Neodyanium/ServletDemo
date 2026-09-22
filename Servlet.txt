@@ -80,15 +80,27 @@ pw.close();
 
 - The webcontainer is responsible for running the servlet. Many methods comes when we implement HttpServlet and they are called internally.
 
-- The Servlet class works like any other when it comes to class loading, so any static blocks will be executed, the comes the class instantiation so a constructor will run, after this the init method is called internally(any initialisation tasks can be done under these blocks), init used for db connections or configs reading 
+- The Servlet class works like any other when it comes to class loading, so any static blocks will be executed, then
+comes the class instantiation so a constructor will run, after this the init method is called internally(any initialisation tasks can be done under these blocks), init used for db connections or configs reading
 
--After this the service method is called when we receive a request, for each request a new thread is created and each thread then runs the service method. Service creates a request and response object, Service directs the request to doPost() or doGet() I feel it depends on the request method type
+-After this the service method is called when we receive a request, for each request a new thread is created and each
+thread then runs the service method. Service creates a request and response object, service method is called by web
+container, the default Service method directs/calls doPost() or doGet() depends on the request method type. When we
+override it, it simply runs the service method.
+
+eg: A login servlet could be mapped to /login.
+    When the user first visits /login, the browser sends a GET request. HttpServlet.service() sees that it is a GET request and calls doGet(), which can display the login form.
+
+    When the user submits the form, the browser sends a POST request to the same /login URL. service() sees that it is a POST request and calls doPost(), which can process the submitted username and password.
+
+    *** So the same URL can have different behavior depending on the HTTP method, managed by service method.
 
 - At the end, when shutting down Tomcat, container calls a destroy method is called which shuts down the servlet
 
 - The init() and destroy() methods are only called once in a Lifecycle, only Service can be called multiple times
 
-Qs, The responsibiliity to create a Servlet is of the Web Container or Servlet container (here it is Tomcat). It works lazily, so instanciation of a servlet happens when a request is received and not when we start the server.
+Qs, The responsibility to create a Servlet is of the Web Container or Servlet container (here it is Tomcat). It works
+lazily, so instantiation of a servlet happens when a request is received and not when we start the server.
 
 
 ----------------------------------
@@ -97,19 +109,25 @@ Qs, The responsibiliity to create a Servlet is of the Web Container or Servlet c
 
 ** Overriding a service method can handle both the post and get requests. Only issue is if you have get and post methods serving different purpose then needs if and else block to check what kind of request it is then providing the response. Like get for static form and 
 
-** I have personally cheked, in a post type html form if I used a service method or doPost method, after sending data and getting a response, reloading the page asks if you want to resubmit and it doesn't get to the input page but resubmits the current data again, so you will have duplicate data. This happens with get type forms too only the warning don't pop up. 
+** I have personally checked, in a post type html form if I used a service method or doPost method, after sending data and getting a response, reloading the page asks if you want to resubmit and it doesn't get to the input page but resubmits the current data again, so you will have duplicate data. This happens with get type forms too only the warning don't pop up.
 
-*****The PRG (Post/Redirect/Get) Pattern, Under this the doPost() and doGet() has simple responsibilities, doPost() recieves and process data, add it to database or any other thing it does not render HTML. Instead, it ends by executing a redirect, to a view(get method). doGet() Its sole job is to fetch and display data It simply reads the current state and uses PrintWriter or a JSP file to display the final result, doesn't change any data. This is how multiple reload will have no effect, since at the end we are getting a view, a get request that doesnt change the data. 
+You need to change the method type in index.html and try a reload of the output, you will notice the above problem, also
+ make sure to inspect the element or a simple log to check proper method is working
 
-*** The reponse.sendRedirect() , is not a preferred method to return a view as it will discard current request data and work towards sending Redirect
--------------
+*****The PRG (Post/Redirect/Get) Pattern, Under this the doPost() and doGet() has simple responsibilities, doPost() receives and process data, add it to database or any other thing it does not render HTML. Instead, it ends by executing a redirect, to a view(get method). doGet() Its sole job is to fetch and display data It simply reads the current state and uses PrintWriter or a JSP file to display the final result, doesn't change any data. This is how multiple reload will have no effect, since at the end we are getting a view, a get request that doesn't change the data.
+
+*** The response.sendRedirect() , return a view as it will discard current request data and work towards sending
+Redirect, in here you pass the path of jsp. Thus, the syntax that must be used here is
+response.sendRedirect(request.getContextPath() + "/filename.jsp");
+-------------------------------------------------------------------
 
 *You can use html in the servlet, but it is not the usual practice, it is recommended to return a view/html file. Since
-html is a rendering language and not a PL there is no concept of variables, so we use JSP(html + more capabilities), so we can use the variables from servlet into the jsp
+html is a rendering language and not a PL there is no concept of variables, so we use JSP(html + more capabilities), so
+we can use the variables from servlet into the jsp
 
 *simply return in the servlet the Module/Project_name/view.jsp
 
-* Other than this if we have more Servlets we can pass the request to another Servlet. We get the dispatcher request object from request object and call any of the 2 methods
+* Other than this if we have more Servlets we can pass the request to another Servlet. We get the request dispatcher  object from request object and call any of the 2 methods
 1) Forward: It forwards the request that came from client to another Servlet and the response is given by the Servlet where the request was forwarded to.
 2) Include: Here is simply does its thing and the response of included servlet(second) is added with the response of the
  receiver Servlet(first Servlet/Dispatcher Servlet)
@@ -154,7 +172,7 @@ Diagram illustration:
    │        │                             │  Servlet  ├────┘
    │        │                             │    Two    │
    └────────┘                             └───────────┘
--------------------------------------
+--------------------------------------------------------------------------------
 
 **** User can and should use RequestDispatcher for rendering the jsp page located in the Webapp. Just create a
 RequestDispatcher with the request object and pass jsp name, then call forward or include method on it.

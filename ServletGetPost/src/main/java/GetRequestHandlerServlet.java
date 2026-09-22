@@ -11,6 +11,7 @@ public class GetRequestHandlerServlet extends HttpServlet {
 
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("Inside doGet");
         String uname = request.getParameter("username");
         String city = request.getParameter("city");
 

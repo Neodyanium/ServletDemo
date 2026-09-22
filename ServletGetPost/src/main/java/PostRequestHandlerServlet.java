@@ -10,6 +10,7 @@ import java.io.PrintWriter;
 public class PostRequestHandlerServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        System.out.println("Inside doPost");
         String uname = request.getParameter("username");
         String city = request.getParameter("city");
 
