@@ -1,0 +1,30 @@
+# Default ignored files
+/shelf/
+/.idea/workspace.xml
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# SmartTomcat
+.smarttomcat/
+
+# Java compiled files
+*.class
+
+# Build output
+target/
+out/
+build/
+
+# Logs
+*.log
+
+# Database credentials
+db.properties
+src/main/resources/db.properties
+
+# OS generated files
+.DS_Store
+Thumbs.db
