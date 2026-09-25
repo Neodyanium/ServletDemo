@@ -14,6 +14,7 @@ public class FormHandlerServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
+
         //request.setAttribute("username","Lmao");
 
         System.out.println("Username:" +username);
