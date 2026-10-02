@@ -252,9 +252,9 @@ Servlet vs JSP
 
 -Controllers (a Servlet) handles the client requests, if it is requesting data it forwards the request to Model(JDBC), the Model returns data that is then given to the view to present to the client. 
 
--Model usually has JDBC handeling, it works according to the request, whether to fetch or add data and returns the output to controller.
+-Model usually has JDBC handeling, it works according to the request, whether to fetch or add data and returns the output to controller. (Data Logic- fetch,create,update,delete)
 
--View provides html or jsp reponse back to the client. 
+-View provides html or jsp reponse back to the client. (User interacts with visually, responsible to show data according to user input)
 
 Here each of these components has an individual work of routing, DB operations and rendering a view, the Model and View should never interact with each other. Controller should be the one to enable the communication.
 
@@ -280,15 +280,105 @@ Here each of these components has an individual work of routing, DB operations a
 *** They are separated so the management of the individual component gets easy and loose coupling helps easy modifications. There could be steps involved between controller and Model/view, which is handled by controller.
 
 
+IMP:
+Whenever you see a path, ask:
+
+Who is going to interpret this path?
+
+If it's the browser, you need to think about the full URL:
+
+http://localhost:8080/MyApp/...
+
+If it's Tomcat/server-side, you're usually operating inside the web application's context, so relative path:
+
+/MyApp
+   └── /success.jsp
+
+So remember these three:
+
+HTML:
+./register
+   ↓
+Browser resolves it to -> http://localhost:8080/MyApp/register
+
+The context path is the application here, Myapp or ServletDemo
+
+Redirect:
+request.getContextPath() + "/success.jsp"
+   ↓
+Browser makes another request -> http://localhost:8080/MyApp/success.jsp
 
 
+Dispatcher:
+"/success.jsp"
+   ↓
+Tomcat resolves it inside current web application, already in directory so just search within for success.jsp
+
+And the WAR gives you the underlying boundary:
+
+                 Tomcat
+                   │
+             localhost:8080
+                   │
+              ┌────┴────┐
+              │  MyApp  │ ← context path
+              │  (WAR)  │
+              ├─────────┤
+              │index.jsp│
+              │success  │
+              │WEB-INF  │
+              └─────────┘
+
+The WAR root = web application's root, while the context path = the URL prefix used to reach that application. That distinction is the main reason you saw /success.jsp in a dispatcher but /ServletJSP/success.jsp in a redirect.
+
+**
+Suppose my app structure is:
+
+Registration/
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── RegisterServlet.java
+│       │
+│       └── webapp/
+│           ├── index.jsp
+│           ├── success.jsp
+│           ├── results.jsp
+│           └── css/
+│               └── style.css
+│
+└── ...
+
+Registration web application structure:
+│
+├── index.jsp
+├── success.jsp
+├── results.jsp
+├── css/
+│   └── style.css
+│
+└── WEB-INF/
+    ├── classes/
+    │   └── RegisterServlet.class
+    └── ...
 
 
+This diagram is more helpful, the webresources is treated as root, we won't be requesting the server side classes like servlet directly in the browser we have mapping for that, we have a url mapping and other is simple resource
+
+                    Registration web application
+                              │
+                context path = /Registration
+                              │
+             ┌────────────────┴────────────────┐
+             │                                 │
+        Java code                         Web resources
+             │                                 │
+    RegisterServlet.class              index.jsp
+                                      success.jsp
 
 
-
-
-
+That is why src/main/webapp/index.jsp = /Registration/index.jsp
 
 
 
